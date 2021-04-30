@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silly speechs generator</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="index.js"></script>
+</head>
+<body> 
+    <header>
+        <h6>Hello My name is <strong>George</strong> and I have made silly thouhts generator</h6>
+    </header>
+             <p id="root"></p>
+            <button onclick="reloadP();" class="button">Reload</button>
+            <button onclick="randomizeQ();" class="button">Next silly Quote</button>
+    <footer class="footer">
+        <h1>&copy; Giorgi Shakiashvili 2021</h1>
+    </footer>
+    <script>
+        window.onload = function() {
+    var reloading = sessionStorage.getItem("reloading");
+    if (reloading) {
+        sessionStorage.removeItem("reloading");
+        myFunction();
+    }
+}
+
+function reloadP() {
+    sessionStorage.setItem("reloading", "true");
+    document.location.reload();
+}
+    </script>
+</body>
+</html>
