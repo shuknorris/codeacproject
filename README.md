@@ -3,7 +3,7 @@
 # This project generates silly messages
 # Table of contents
 
-* Technologies
+# Technologies
 * Javascript
 * Css
 * Html
